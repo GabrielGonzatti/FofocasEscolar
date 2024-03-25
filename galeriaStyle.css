@@ -9,7 +9,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
-    color: #333;
+    color:#ffffff;
+    font-size: 22px;
+    background-image: url("https://i.pinimg.com/originals/e4/1c/95/e41c9528d0a78ab98d6a6f3425d0b3b7.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
     line-height: 1.6;
 }
 
@@ -18,69 +23,52 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
 .header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
 }
-
 .logo {
     font-size: 24px;
 }
-
 .nav-links {
     list-style-type: none;
     display: flex;
 }
-
 .nav-link {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     margin-right: 20px;
 }
-
 .gallery {
     padding: 40px 0;
 }
-
 .section-title {
     font-size: 32px;
     margin-bottom: 20px;
+    text-align: center;
 }
-
 .gallery-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
-
 .image {
     position: relative;
 }
-
 .image img {
     width: 100%;
-    display: block;
+    height: 200px;
     border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    background-position: center;
 }
-
+.image:hover img {
+    transform: scale(1.05);
+}
 .image-caption {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
-    font-size: 14px;
+    bottom: 10px
 }
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
